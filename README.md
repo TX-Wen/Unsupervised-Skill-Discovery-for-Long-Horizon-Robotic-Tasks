@@ -84,13 +84,6 @@ Our framework has been successfully evaluated across diverse simulation environm
 <div align="center">
   <p><i>The following strips visualize three distinct behavioral modalities discovered for the same target interaction phase. <br> 以下长条图可视化了在同一个目标交互阶段中，算法无监督发现的三种截然不同的行为模态。</i></p>
 
-### 3. PushT: Behavior Modality Segmentation / PushT任务：行为模态自动识别
-* **English:** This visuo-spatial manipulation task highlights the final **graph-based community discovery stage**. Leveraging a rich fusion of visual feedback and physical spatial features, the framework successfully filters local drift noise. More importantly, within a single localized sub-task, it autonomously distinguishes divergent behavior modalities (e.g., alternative pushing trajectories or obstacle-avoidance patterns) for the exact same underlying goal.
-* **中文：** 这一视觉-空间操纵任务重点突出了流水线后期的**图论社区发现阶段**。框架深度融合视觉反馈与物理空间位置特征，不仅有效过滤了局部漂移噪声，更重要的是，在同一个局部子任务内部，它能自适应地识别并分离出完成同一目标的截然不同的行为模态（例如：不同的物理推动路径或避障策略）。
-
-<div align="center">
-  <p><i>The following strips visualize three distinct behavioral modalities discovered for the same target interaction phase. <br> 以下长条图可视化了在同一个目标交互阶段中，算法无监督发现的三种截然不同的行为模态。</i></p>
-
   <p align="left"><b>Modality 1 (Class C9): Top-Down Push / 从物块上方推</b></p>
   <img src="assets/pusht_modality_C9.png" width="850" alt="PushT Modality 1: Pushing from Top">
   
