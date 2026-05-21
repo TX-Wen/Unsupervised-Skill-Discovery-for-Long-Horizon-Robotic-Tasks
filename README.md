@@ -9,9 +9,9 @@
 ## 💡 Overview / 项目概述
 
 
-This repository provides a preliminary showcase of a data-driven framework designed to autonomously segment and extract skill primitives from long-horizon robotic demonstrations, strictly under **unsupervised conditions**. 
+This repository provides a preliminary showcase of a data-driven framework designed to autonomously segment and extract skill primitives from long-horizon, multimodal expert robotic demonstrations (e.g., visual observations, proprioceptive poses), strictly under unsupervised conditions.
 
-By evaluating datasets and mapping demonstrations without manual annotations, this framework extracts actionable skill primitives that can be seamlessly integrated into Vision-Language-Action (VLA) architectures for advanced logical reasoning and real-world deployment.
+By evaluating datasets and mapping demonstrations without manual annotations, this framework extracts actionable skill primitives for advanced logical reasoning and real-world deployment.
 
 
 本仓库展示了一个完全在**无监督条件**下运行的数据驱动框架，旨在从长视角的机器人专家多模态演示数据中（视觉、位姿等），自动切分并提取出动作技能基元（Skill Primitives）。
