@@ -73,7 +73,7 @@ Our framework has been successfully evaluated across diverse simulation environm
   <br>
 
   <p align="left"><b>Phase 3 (Class C2): Placing the Pot on the Stove / 将摩卡壶放置于火炉上</b></p>
-  <img src="assets/libero_C2.png" width="850" alt="LIBERO Phase 3: Placing the pot on the stove">
+  <img src="assets/libero_C2_1.png" width="850" alt="LIBERO Phase 3: Placing the pot on the stove">
   
   <br>
     
