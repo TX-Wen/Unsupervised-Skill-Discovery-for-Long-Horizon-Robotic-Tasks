@@ -50,7 +50,7 @@ Our framework has been successfully evaluated across diverse simulation environm
 * **中文：** 该基准将我们的方法与传统的空间图聚类基线进行了对比，重点验证了**状态映射与初步图构建阶段**的有效性。需要强调的是，传统图聚类算法严重依赖低维的明确空间坐标，完全无法处理高维视觉特征（这也是为何后续的 PushT 和 LIBERO 任务只能由本框架完成的原因）。如下图所示，相比于基线算法产生的粘连噪声，本框架成功去噪，极其清晰地提取出了细粒度的并行行为模态（绕过障碍物的左右路径）以及结构化的核心子任务节点（狭窄的门），在分类准确率上实现了 **33.9% 的提升**。
 
 <div align="center">
-  <img src="assets/leiden_2d.png" width="200" alt="Baseline Graph Clustering">
+  <img src="assets/leiden_2d.png" width="180" alt="Baseline Graph Clustering">
   &nbsp;&nbsp;&nbsp;&nbsp; <img src="assets/our_2d.png" width="200" alt="Our Framework Clustering">
   
   <br><br>
