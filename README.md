@@ -43,14 +43,4 @@ For identical manipulation objectives in the LIBERO suite, our approach robustly
   <img src="assets/libero_multimodal.gif" width="800" alt="LIBERO Multimodal Execution">
 </div>
 
----
 
-## 👨‍💻 Author
-
-**Tongxin Wen**
-* M.Eng. in Mechanical Engineering, Harbin Institute of Technology (HIT)
-* Affiliated with the State Key Laboratory of Robotics and System (SKL)
-* [Homepage: TX-Wen.github.io](https://TX-Wen.github.io) 
-* Contact: wen78675847@gmail.com
-
-For academic inquiries or potential collaborations, please feel free to reach out via email.
