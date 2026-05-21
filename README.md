@@ -16,7 +16,7 @@ By evaluating datasets and mapping demonstrations without manual annotations, th
 ### 中文
 本仓库展示了一个完全在**无监督条件**下运行的数据驱动框架，旨在从长视角的机器人专家多模态演示数据中（视觉、位姿等），自动切分并提取出动作技能基元（Skill Primitives）。
 
-该框架无需任何人工标注即可对数据集进行评估和行为映射，提取出的技能节点能够集成到愿景-语言-动作（VLA）大模型架构中，从而赋能高层的逻辑推理与实体机器人部署。
+该框架无需任何人工标注即可对数据集进行评估和行为映射，从而赋能高层的逻辑推理与实体机器人部署。
 
 ---
 
@@ -50,8 +50,8 @@ Our framework has been successfully evaluated across diverse simulation environm
 * **中文：** 该基准将我们的方法与传统的空间图聚类基线进行了对比，重点验证了**状态映射与初步图构建阶段**的有效性。需要强调的是，传统图聚类算法严重依赖低维的明确空间坐标，完全无法处理高维视觉特征（这也是为何后续的 PushT 和 LIBERO 任务只能由本框架完成的原因）。如下图所示，相比于基线算法产生的粘连噪声，本框架成功去噪，极其清晰地提取出了细粒度的并行行为模态（绕过障碍物的左右路径）以及结构化的核心子任务节点（狭窄的门），在分类准确率上实现了 **33.9% 的提升**。
 
 <div align="center">
-  <img src="assets/leiden_2d.png" width="380" alt="Baseline Graph Clustering">
-  &nbsp;&nbsp;&nbsp;&nbsp; <img src="assets/our_2d.png" width="380" alt="Our Framework Clustering">
+  <img src="assets/leiden_2d.png" width="200" alt="Baseline Graph Clustering">
+  &nbsp;&nbsp;&nbsp;&nbsp; <img src="assets/our_2d.png" width="200" alt="Our Framework Clustering">
   
   <br><br>
   
@@ -77,10 +77,7 @@ Our framework has been successfully evaluated across diverse simulation environm
   <img src="assets/libero_C2.png" width="850" alt="LIBERO Phase 3: Placing the pot on the stove">
   
   <br>
-  
-  <p><i><b>Task Phase Alignment:</b> Each strip represents an autonomously discovered sub-task stage within this complex sequential manipulation. Images within a strip are curated from different demonstration trajectories, highlighting the framework's ability to consistently group identical semantic behaviors (e.g., reaching, interacting, placing) across visual variances. <br> <b>任务阶段对齐：</b> 每个长条代表在这一复杂连续操纵任务中，算法无监督发现的子阶段。长条内的图片从不同的演示轨迹中抽取，凸显了框架在存在视觉差异的情况下，仍能高度一致地将相同的语义行为进行精准归类。</i></p>
-</div>
-  
+    
   <p><i><b>Task Phase Alignment:</b> Each strip represents an autonomously discovered sub-task stage. Images within a strip are randomly sampled from different demonstration trajectories, highlighting the framework's ability to consistently group identical semantic behaviors across visual variances. <br> <b>任务阶段对齐：</b> 每个长条代表算法无监督发现的一个子任务阶段。长条内的图片是从不同的演示轨迹中随机抽取的，凸显了框架在存在视觉差异的情况下，仍能高度一致地将相同的语义行为进行归类的能力。</i></p>
 </div>
 
@@ -108,6 +105,4 @@ Our framework has been successfully evaluated across diverse simulation environm
   
   <p><i><b>Parallel Modality Recognition:</b> Unlike sequential phases, Classes C9, C10, and C11 represent parallel spatial strategies. Columns depict random trajectory samples. The visual consistency within each strip proves the framework's capability to categorize complex visuo-motor actions based on multi-modal topological similarities. <br> <b>并行模态识别：</b> 与时序阶段不同，C9、C10 和 C11 代表了并行的空间操作策略。即使不同演示的视觉初始状态不同，算法依然能精准地将具有相似拓扑特征的复杂视觉-运动行为归入对应的模态。</i></p>
 </div>
-  
-  <p><i><b>Parallel Modality Recognition:</b> Unlike sequential phases, Classes C9, C10, and C11 represent parallel strategies. Columns depict random trajectory samples. The visual consistency within each strip proves the framework's capability to categorize complex visuo-motor actions based on multi-modal topological similarities. <br> <b>并行模态识别：</b> 与时序阶段不同，C9、C10 和 C11 代表了并行的操作策略。即使不同演示的视觉初始状态不同，算法依然能精准地将具有相似拓扑特征的复杂视觉-运动行为归入对应的模态。</i></p>
-</div>
+ 
